@@ -1,0 +1,246 @@
+/* Style for long radio button label */
+.long-radio label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.7em;
+    max-width: 100%;
+}
+.long-radio-text {
+    display: inline-block;
+    word-break: break-word;
+    white-space: normal;
+    line-height: 1.4;
+    padding-top: 0.2em;
+}
+.date-choices ul {
+    padding-left: 1.2em;
+}
+.date-choices li {
+    margin-bottom: 0.7em;
+    
+}
+/* Responsive image 2 styling */
+#img2 {
+        width: 40vw;
+        max-width: 220px;
+        min-width: 80px;
+        height: auto;
+        display: block;
+        margin: 2vw auto;
+        border-radius: 1vw;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+@media (max-width: 600px) {
+    .img2 {
+        width: 70vw;
+        max-width: 95vw;
+        min-width: 60px;
+        margin: 4vw auto;
+    }
+}
+
+p {
+    color: #9a1893;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/* Animation for cute images moving from corners to center on scroll */
+.cute {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    min-width: 220px;
+    height: 40vw;
+    min-height: 120px;
+    margin: 4vw auto 4vw auto;
+    overflow: visible;
+    background: pink;
+    border: 4px solid black;
+    border-radius: 2vw;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw 0;
+    box-sizing: border-box;
+}
+.cute-img {
+    position: absolute;
+    top: 0;
+    width: 20vw;
+    max-width: 90px;
+    min-width: 60px;
+    height: auto;
+    transition: left 0.5s, right 0.5s, transform 0.5s;
+    z-index: 2;
+}
+.cute-img.left {
+    left: 0;
+    transform: translateX(var(--move-left, 0));
+}
+.cute-img.right {
+    right: 0;
+    transform: translateX(var(--move-right, 0));
+}
+.cute.meet .cute-img.left {
+    left: 50%;
+    transform: translateX(-100%);
+}
+.cute.meet .cute-img.right {
+    right: 50%;
+    transform: translateX(100%);
+}
+
+body{
+    background-color: rgb(254, 251, 253);
+    padding-top: 2vw;
+}
+
+h1{
+    font-size: 6vw;
+    margin: 2vw 0 1vw 0;
+    text-align: center;
+}
+p{
+    font-size: 4.5vw;
+    margin: 0 0 2vw 0;
+    text-align:justify;
+}
+.head{
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    padding: 2vw 2vw;
+    padding-left: 2vw;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 2vw 0 1vw 0;
+    margin-top: 2vw;
+    border-radius: 2vw;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container > div {
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: pink;
+    border: 4px solid black;
+    border-radius: 2vw;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    margin-bottom: 4vw;
+    padding: 2vw 6vw;
+    box-sizing: border-box;
+}
+@media (max-width: 600px) {
+    .head{
+        border: 4px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: pink;
+        padding: 2vw 6vw;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0 0 4vw 0;
+        border-radius: 2vw;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    }
+}
+
+.cute {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: 40vw;
+    min-height: 120px;
+    margin: 0 0 4vw 0;
+    overflow: visible;
+    background: pink;
+    border: 4px solid black;
+    border-radius: 2vw;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw 2vw;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    .container > div,
+    .head,
+    .cute {
+        padding-left: 3vw;
+        padding-right: 3vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container > div,
+    .head,
+    .cute {
+        padding-left: 12vw;
+        padding-right: 12vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+}
+
+input[type="date"] {
+    width: 90%;
+    max-width: 90%;
+    font-size: 1.2em;
+    padding: 0.7em 0.5em;
+    box-sizing: border-box;
+    border-radius: 0.5em;
+    border: 1px solid #aaa;
+    margin-bottom: 2vw;
+}
+
+button[type="submit"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.9em 0;
+    font-size: 1.2em;
+    background: #ff69b4;
+    color: #fff;
+    border: none;
+    border-radius: 0.7em;
+    margin-top: 2vw;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button[type="submit"]:hover {
+    background: #ff1493;
+}
